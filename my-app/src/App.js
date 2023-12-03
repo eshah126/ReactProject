@@ -8,10 +8,8 @@ function App() {
     const ops =['/','*','+', '-','.'];
 
     const updateCalc = value => {
-        if(
-            ops.includes(value) && calc === '' ||
-             ops.includes(value) && ops.includes(calc.slice(-1))
-        ) {
+        if((ops.includes(value) && calc === '') ||
+         (ops.includes(value) && ops.includes(calc.slice(-1)))) {
             return;
         }
         setCalc(calc+value);
@@ -36,7 +34,7 @@ function App() {
     }
 
     const deleteLast = ()=> {
-        if(calc == ''){
+        if(calc === ''){
             return;
         } 
         const value = calc.slice(0,-1);
@@ -86,3 +84,5 @@ function App() {
         </div>
     )
 }
+
+export default App;
