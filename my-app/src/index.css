@@ -36,7 +36,7 @@ body {
 .display{
   padding:16px;
   text-align:right;
-  backgound-color: var(--dark);
+  background-color: var(--dark);
   color: var(--light);
   font-size: 24px;
   font-weight: 300;
